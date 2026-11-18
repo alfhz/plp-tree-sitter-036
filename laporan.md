@@ -20,9 +20,9 @@
 ![Tebakan pohon vs hasil asli](laporan/screenshot/t1-pohon.png)
 ![Node ERROR/MISSING](laporan/screenshot/t1-error.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Apa yang dikerjakan, minimal 3 node anonim yang ditemukan, dan beda `children` dengan `named_children` pakai contoh kodemu sendiri.]
+**Penjelasan singkat:** Pada tugas ini saya memakai tree-sitter untuk mem-parse tiga potongan kode Python, yaitu `fungsi`, `if_else`, dan `kelas`, lalu mencetak struktur tree-nya. Dari penelusuran anak node, saya menemukan beberapa node anonim, yaitu `def` dan `return` pada potongan `fungsi`, serta `if` dan `:` pada potongan `if_else`. Perbedaan `children` dan `named_children` adalah `children` mengambil semua anak node, termasuk yang anonim, sedangkan `named_children` hanya mengambil anak yang bernama. Pada potongan `fungsi`, `children` berisi 5 node (`def`, `identifier`, `parameters`, `return`, `expression_statement`), sedangkan `named_children` hanya berisi 3 node (`identifier`, `parameters`, `expression_statement`).
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+**Kendala dan solusi:** Kendala pada memperkirakan hasil pohon. Solusinya dengan memahami pada playground tree sitter.
 
 ## Tugas 2: Penjelajah node
 
