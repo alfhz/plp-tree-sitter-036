@@ -30,9 +30,9 @@
 
 ![Output jelajah.py pada file 100+ baris](laporan/screenshot/t2-jelajah.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Cara rekursi jalan dan cara nama field diambil.]
+**Penjelasan singkat:** Program ini membaca file Python dari argumen command line, mem-parse isinya dengan tree-sitter, lalu mencetak tree-nya secara rekursif lewat fungsi `jelajah`. Setiap node dicetak dengan indentasi sesuai kedalamannya, diikuti tipe node dan posisinya dalam format `[baris:kolom]`. Nomor baris ditambah 1 karena `start_point` dimulai dari 0. Fungsi ini hanya menelusuri anak yang bernama (`is_named`), sehingga token anonim seperti `def` dan `:` tidak ikut tercetak. Untuk setiap anak, program juga mengambil nama field dari grammar lewat `field_name_for_child`, misalnya `name:`, `parameters:`, dan `body:`, sehingga hubungan antara node induk dan anaknya terlihat jelas.
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+**Kendala dan solusi:** Fungsi rekursi sempat tidak menampilkan nama field. Solusi memperbaiki indeks child yang digunakan.
 
 ## Tugas 3: Query pertama
 
@@ -77,10 +77,10 @@
 
 ## Catatan penggunaan AI
 
-Isi hanya untuk tugas yang dibantu AI. Kesalahan AI harus benar-benar kamu temukan sendiri, lengkap dengan buktinya.
+Isi hanya untuk tugas yang dibantu AI
 
 | Tugas       | Yang diminta ke AI | Kesalahan atau kekurangan hasil AI | Cara membuktikan                  |
 | ----------- | ------------------ | ---------------------------------- | --------------------------------- |
-| [Tugas ke-] | [isi]              | [isi]                              | [kasus uji / output / cek manual] |
-| [Tugas ke-] | [isi]              | [isi]                              | [isi]                             |
+| [Setup] | [Bantu setup envirovment]              | [Beberapa instruksi tidak compatible]                              | [kasus uji dan output] |
+| [Tugas ke-2] | [Analisis kesalahan kode rekursi]              | [Hasil bertele-tele]                              | [output]                             |
 | [Tugas ke-] | [isi]              | [isi]                              | [isi]                             |
