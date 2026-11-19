@@ -64,3 +64,26 @@ status = "open" or priority > 2 and owner = "budi"
       (comparison
         (identifier)
         (string)))))
+
+
+==================
+kurung
+==================
+
+(a = 1 or b = 2) and c = 3
+
+---
+
+(query
+  (and_expression
+    (parenthesized
+      (or_expression
+        (comparison
+          (identifier)
+          (number))
+        (comparison
+          (identifier)
+          (number))))
+    (comparison
+      (identifier)
+      (number))))
