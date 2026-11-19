@@ -81,9 +81,16 @@
 
 ![Output cek.py di folder uji dan repo nyata](laporan/screenshot/t6-cek.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Tiga fitur yang dibuat, repo yang dipakai untuk uji, dan hasil cek manual 2 file acak.]
+**Hasil cek manual (2 file acak dari repo MiniGamesBot):**
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+| File | Hasil cek.py | Hasil cek manual | Cocok? |
+| --- | --- | --- | --- |
+| `discordbot\discordminigames\singleplayergames\blackjack_dc.py` | 1 fungsi > 30 baris (`get_board` baris 60, 32 baris), 0 TODO/FIXME, 0 error sintaks | Fungsi `get_board` berada di baris 60–91 (total 32 baris > 30), tidak ada komentar `TODO`/`FIXME`, dan sintaks Python valid | Ya |
+| `discordbot\databasemanager.py` | 1 fungsi > 30 baris (`on_startup` baris 20, 54 baris), 0 TODO/FIXME, 0 error sintaks | Fungsi `on_startup` berada di baris 20–73 (total 54 baris > 30), tidak ada komentar `TODO`/`FIXME`, dan sintaks Python valid | Ya |
+
+**Penjelasan singkat:** cek.py menelusuri semua file .py di folder yang diberikan dan melaporkan tiga hal. Pertama komentar TODO dan FIXME, lewat query komentar dengan predikat `#match?`. Kedua fungsi yang body-nya lebih dari 30 baris, dihitung dari `start_point` dan `end_point` node `function_definition`. Ketiga file yang pohonnya punya error, dicek lewat `has_error`, lalu baris pertama yang bermasalah dicari dengan fungsi rekursif. Skrip diuji di folder `uji` buatan sendiri dan di repo MiniGamesBot, lalu dua file acak dicocokkan manual dengan hasil cocok.
+
+**Kendala dan solusi:** Kesulitan memahami instruksi tugas. Solusi dengan bertanya pada AI.
 
 ## Catatan penggunaan AI
 
@@ -93,8 +100,9 @@ Isi hanya untuk tugas yang dibantu AI
 | ----------- | ------------------ | ---------------------------------- | --------------------------------- |
 | [Setup] | [Bantu setup envirovment]              | [Beberapa instruksi tidak compatible]                              | [kasus uji dan output] |
 | [Tugas ke-2] | [Analisis kesalahan kode rekursi]              | [Hasil bertele-tele]                              | [output]                             |
-| [Tugas ke-3] | [Menjelaskan scm dan keterhubungannya dengan py]              | [Tidak ada]                              | [output]                             |
-| [Tugas ke-4] | [Langkah membuat grammar sesuai case]              | [Salah interpretasi input output]                              | [kasus uji dan output]                             |
+| [Tugas ke-3] | [Menjelaskan scm dan keterhubungannya dengan py]              | [Sesuai]                              | [output]                             |
+| [Tugas ke-4] | [Breakdown cara kerja yang tepat ditiap langkah]              | [Urutan cara kerja ada yang kurang tepat]                              | [kasus uji dan output]                             |
+| [Tugas ke-4] | [Langkah membuat grammar sesuai case/langkah]              | [Salah interpretasi input output sehingga hasil tidak sesuai]                              | [kasus uji dan output]                             |
 | [Tugas ke-5] | [Menganalisis warning entry point highlight]              | [Sesuai]                              | [output]                             |
 | [Tugas ke-6] | [Menganalisis error module]              | [Sesuai]                              | [output]                             |
 | [Tugas ke-6] | [Menjelaskan dan membantu mengerjakan tugas 6]              | [Sesuai]                              | [kasus uji dan output]                             |
