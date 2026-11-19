@@ -98,3 +98,4 @@ Isi hanya untuk tugas yang dibantu AI
 | [Tugas ke-5] | [Menganalisis warning entry point highlight]              | [Sesuai]                              | [output]                             |
 | [Tugas ke-6] | [Menganalisis error module]              | [Sesuai]                              | [output]                             |
 | [Tugas ke-6] | [Menjelaskan dan membantu mengerjakan tugas 6]              | [Sesuai]                              | [kasus uji dan output]                             |
+| [Tugas ke-6] | [Membuat readme cek tugas 6]              | [Sesuai]                              | [output]                             |
