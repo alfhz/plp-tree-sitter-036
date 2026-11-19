@@ -1,1 +1,1 @@
-a = 1 and b = 2
+status = "open" or priority > 2 and owner = "budi"
