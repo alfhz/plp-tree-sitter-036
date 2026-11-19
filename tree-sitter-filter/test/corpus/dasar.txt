@@ -8,9 +8,8 @@ status = "open"
 
 (query
   (comparison
-    (identifier)
-    (string)))
-
+    field: (identifier)
+    value: (string)))
 
 ==================
 perbandingan angka
@@ -22,9 +21,8 @@ priority >= 2
 
 (query
   (comparison
-    (identifier)
-    (number)))
-
+    field: (identifier)
+    value: (number)))
 
 ==================
 and
@@ -36,13 +34,12 @@ a = 1 and b = 2
 
 (query
   (and_expression
-    (comparison
-      (identifier)
-      (number))
-    (comparison
-      (identifier)
-      (number))))
-
+    left: (comparison
+      field: (identifier)
+      value: (number))
+    right: (comparison
+      field: (identifier)
+      value: (number))))
 
 ==================
 and lebih kuat dari or
@@ -54,17 +51,16 @@ status = "open" or priority > 2 and owner = "budi"
 
 (query
   (or_expression
-    (comparison
-      (identifier)
-      (string))
-    (and_expression
-      (comparison
-        (identifier)
-        (number))
-      (comparison
-        (identifier)
-        (string)))))
-
+    left: (comparison
+      field: (identifier)
+      value: (string))
+    right: (and_expression
+      left: (comparison
+        field: (identifier)
+        value: (number))
+      right: (comparison
+        field: (identifier)
+        value: (string)))))
 
 ==================
 kurung
@@ -76,18 +72,17 @@ kurung
 
 (query
   (and_expression
-    (parenthesized
+    left: (parenthesized
       (or_expression
-        (comparison
-          (identifier)
-          (number))
-        (comparison
-          (identifier)
-          (number))))
-    (comparison
-      (identifier)
-      (number))))
-
+        left: (comparison
+          field: (identifier)
+          value: (number))
+        right: (comparison
+          field: (identifier)
+          value: (number))))
+    right: (comparison
+      field: (identifier)
+      value: (number))))
 
 ==================
 not dan boolean
@@ -99,6 +94,6 @@ not archived = true
 
 (query
   (not_expression
-    (comparison
-      (identifier)
-      (boolean))))
+    operand: (comparison
+      field: (identifier)
+      value: (boolean))))
