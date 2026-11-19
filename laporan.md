@@ -95,3 +95,4 @@ Isi hanya untuk tugas yang dibantu AI
 | [Tugas ke-2] | [Analisis kesalahan kode rekursi]              | [Hasil bertele-tele]                              | [output]                             |
 | [Tugas ke-3] | [Menjelaskan scm dan keterhubungannya dengan py]              | [Tidak ada]                              | [output]                             |
 | [Tugas ke-4] | [Langkah membuat grammar sesuai case]              | [Salah interpretasi input output]                              | [kasus uji dan output]                             |
+| [Tugas ke-5] | [Menganalisis warning entry point highlight]              | [Sesuai]                              | [output]                             |
