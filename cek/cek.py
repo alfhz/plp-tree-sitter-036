@@ -9,6 +9,16 @@ parser = Parser(PY)
 Q_TODO = Query(PY, '((comment) @c (#match? @c "TODO|FIXME"))')
 Q_FUNC = Query(PY, "(function_definition name: (identifier) @nama) @fungsi")
 
+def cari_error(node):
+    if node.is_error or node.is_missing:
+        return node
+    for child in node.children:
+        hasil = cari_error(child)
+        if hasil:
+            return hasil
+    return None
+
+SKIP = {"venv", ".venv", ".git", "node_modules"}
 def cek_file(path):
     tree = parser.parse(path.read_bytes())
 
@@ -24,7 +34,13 @@ def cek_file(path):
         if baris > 30:
             print(f"{path}:{f.start_point[0] + 1}: fungsi {nama} panjang ({baris} baris)")
             
-    # Fitur 3 (TODO): file yang pohonnya mengandung error
+    # Fitur 3: file dengan error sintaks
+    if tree.root_node.has_error:
+        e = cari_error(tree.root_node)
+        if e:
+            print(f"{path}:{e.start_point[0] + 1}: ada error sintaks")
 
 for path in Path(sys.argv[1]).rglob("*.py"):
+    if SKIP & set(path.parts):
+        continue
     cek_file(path)
