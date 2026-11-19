@@ -71,9 +71,9 @@
 
 ![Hasil tree-sitter highlight](laporan/screenshot/t5-highlight.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Capture apa saja yang dibuat dan untuk token mana.]
+**Penjelasan singkat:** File `queries/highlights.scm` berisi capture untuk tiap jenis token. Kata kunci (`and`, `or`, `not`, `in`, `contains`) diberi `@keyword`, operator perbandingan diberi `@operator`, lalu `string`, `number`, dan `boolean` masing-masing punya capture sendiri. Nama field pada `comparison`, `in_expression`, dan `contains_expression` diberi `@property`. Sebelum query diisi lengkap, konfigurasi CLI dicek dulu lewat satu baris `(string) @string` sampai string berwarna, baru capture lain ditambah satu per satu pada file `lengkap.filter`.
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+**Kendala dan solusi:** Kesulitan konfigurasi highlight di awal, ada warning karena highlight tidak dikenali. Solusi dengan menambahkan path highlight yang sesuai di tree-sitter.json
 
 ## Tugas 6: cek.py
 
