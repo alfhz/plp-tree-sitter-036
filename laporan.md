@@ -40,9 +40,17 @@
 
 ![Tiga query dan hitungan manual](laporan/screenshot/t3-query.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Pola query yang dipakai dan kenapa hasilnya cocok dengan hitungan manual.]
+**Hasil query vs hitungan manual:**
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+| Query | Hasil query | Hitungan manual | Cocok? |
+| --- | --- | --- | --- |
+| Fungsi dan jumlah parameter | halo 0 (baris 4), tambah 2 (baris 7), sapa 2 (baris 10) | halo 0, tambah 2, sapa 2 | ya |
+| Pemanggilan print | 2 pemanggilan, di baris 5 dan baris 11 | 2 pemanggilan | ya |
+| Import | os (baris 1), pathlib (baris 2) | os, pathlib | ya |
+
+**Penjelasan singkat:** Tiga query ditulis di file `.scm` dan dijalankan lewat `q.py` yang memakai `QueryCursor`. Query pertama menangkap nama fungsi dan node `parameters`, lalu jumlah parameter dihitung dari `named_child_count`. Query kedua mencari pemanggilan `print` dengan predikat `#eq?`. Query ketiga mengambil nama modul dari `import_statement` dan `import_from_statement`, dengan nama node dicek dulu lewat `jelajah.py`. Hasil ketiganya sama dengan hitungan manual pada `contoh.py`.
+
+**Kendala dan solusi:** Query fungsi dengan `captures` menampilkan nama fungsi dan parameter secara terpisah, sehingga tidak bisa dipasangkan. Solusinya memakai `matches` di `q_match.py` supaya nama dan parameter dalam satu match bisa diambil bersamaan.
 
 ## Tugas 4: Grammar DSL filter
 

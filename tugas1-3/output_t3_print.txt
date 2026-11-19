@@ -1,0 +1,4 @@
+﻿@fn  baris 5: print
+@fn  baris 11: print
+@args  baris 5: ("halo")
+@args  baris 11: (sapaan, nama)
