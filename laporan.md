@@ -58,10 +58,12 @@
 
 ![tree-sitter test lulus](laporan/screenshot/t4-test.png)
 ![Pesan conflict di langkah 4c](laporan/screenshot/t4-conflict.png)
+![Hasil generate & parse case parse](laporan/screenshot/t4-parse.png)
+![Hasil generate & parse case in](laporan/screenshot/t4-in.png)
 
-**Penjelasan singkat:** [2-3 kalimat. Fitur yang ditambah bertahap, kenapa `and` lebih kuat dari `or`, serta tes `in` dan `contains`.]
+**Penjelasan singkat:** Grammar filter dikembangkan dengan tiga fitur utama, yaitu operator logika (and, or, not), pengelompokan menggunakan kurung dan boolean, serta operator perbandingan (in, contains) dan label field. Pengujian dilakukan melalui tree-sitter generate, parse, dan test. Hasil pengecekan manual pada dua file acak menunjukkan grammar berhasil mengenali sintaks sesuai aturan yang dibuat.
 
-**Kendala dan solusi:** [Isi, atau tulis "tidak ada"]
+**Kendala dan solusi:** Kesulitan memahami cara pembuatan grammar per case. Solusi dengan bertanya pada AI
 
 ## Tugas 5: Highlight
 
@@ -91,4 +93,5 @@ Isi hanya untuk tugas yang dibantu AI
 | ----------- | ------------------ | ---------------------------------- | --------------------------------- |
 | [Setup] | [Bantu setup envirovment]              | [Beberapa instruksi tidak compatible]                              | [kasus uji dan output] |
 | [Tugas ke-2] | [Analisis kesalahan kode rekursi]              | [Hasil bertele-tele]                              | [output]                             |
-| [Tugas ke-] | [isi]              | [isi]                              | [isi]                             |
+| [Tugas ke-3] | [Menjelaskan scm dan keterhubungannya dengan py]              | [Tidak ada]                              | [output]                             |
+| [Tugas ke-4] | [Langkah membuat grammar sesuai case]              | [Salah interpretasi input output]                              | [kasus uji dan output]                             |
