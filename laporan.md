@@ -94,16 +94,15 @@
 
 ## Catatan penggunaan AI
 
-Isi hanya untuk tugas yang dibantu AI
 
-| Tugas       | Yang diminta ke AI | Kesalahan atau kekurangan hasil AI | Cara membuktikan                  |
-| ----------- | ------------------ | ---------------------------------- | --------------------------------- |
-| [Setup] | [Bantu setup envirovment]              | [Beberapa instruksi tidak compatible]                              | [kasus uji dan output] |
-| [Tugas ke-2] | [Analisis kesalahan kode rekursi]              | [Hasil bertele-tele]                              | [output]                             |
-| [Tugas ke-3] | [Menjelaskan scm dan keterhubungannya dengan py]              | [Sesuai]                              | [output]                             |
-| [Tugas ke-4] | [Breakdown cara kerja yang tepat ditiap langkah]              | [Urutan cara kerja ada yang kurang tepat]                              | [kasus uji dan output]                             |
-| [Tugas ke-4] | [Langkah membuat grammar sesuai case/langkah]              | [Salah interpretasi input output sehingga hasil tidak sesuai]                              | [kasus uji dan output]                             |
-| [Tugas ke-5] | [Menganalisis warning entry point highlight]              | [Sesuai]                              | [output]                             |
-| [Tugas ke-6] | [Menganalisis error module]              | [Sesuai]                              | [output]                             |
-| [Tugas ke-6] | [Menjelaskan dan membantu mengerjakan tugas 6]              | [Sesuai]                              | [kasus uji dan output]                             |
-| [Tugas ke-6] | [Membuat readme cek tugas 6]              | [Sesuai]                              | [output]                             |
+| Tugas | Yang Diminta ke AI | Kesalahan atau Kekurangan Hasil AI | Cara Membuktikan |
+|---|---|---|---|
+| Setup | Membantu setup environment | Beberapa instruksi tidak kompatibel | Kasus uji dan output |
+| Tugas ke-2 | Menganalisis kesalahan kode rekursi | Hasil terlalu bertele-tele | Output |
+| Tugas ke-3 | Menjelaskan SCM dan keterhubungannya dengan Python | Sesuai | Output |
+| Tugas ke-4 | Breakdown cara kerja yang tepat di setiap langkah | Urutan cara kerja ada yang kurang tepat | Kasus uji dan output |
+| Tugas ke-4 | Langkah membuat grammar sesuai case/langkah | Salah menginterpretasikan input dan output sehingga hasil tidak sesuai | Kasus uji dan output |
+| Tugas ke-5 | Menganalisis warning entry point highlight | Sesuai | Output |
+| Tugas ke-6 | Menganalisis error module | Sesuai | Output |
+| Tugas ke-6 | Menjelaskan dan membantu mengerjakan tugas 6 | Sesuai | Kasus uji dan output |
+| Tugas ke-6 | Membuat README cek tugas 6 | Sesuai | Output |
