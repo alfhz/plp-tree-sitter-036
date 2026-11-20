@@ -1,6 +1,6 @@
 # PLP Tree-sitter
 
-Tugas awal Tree-sitter untuk mata kuliah Programming Language Pragmatics.
+Tugas awal Tree-sitter untuk mata kuliah Programming Language Pragmatics 2026.
 
 **Nama:** Alifah Zachra Syifatunnajwa | **NIM:** 251524036 | **Kelas:** 2B-D4
 
