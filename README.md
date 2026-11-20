@@ -36,8 +36,8 @@ Repo ini berisi tugas awal untuk mengenal Tree-sitter secara bertahap: membaca p
 | `tugas1-3/` | Tugas 1-3: parse dan baca pohon (`t1.py`), penjelajah node (`jelajah.py`), query `.scm` beserta penjalannya (`q.py`, `q_match.py`), dan output-nya dalam `.txt` |
 | `tree-sitter-filter/` | Tugas 4-5: grammar DSL filter (`grammar.js`), kasus uji di `test/corpus/`, dan highlight di `queries/highlights.scm` |
 | `cek/` | Tugas 6: `cek.py`, pemeriksa file Python (punya `README.md` sendiri) |
-| `laporan.md`, `laporan.pdf`, `laporan/screenshot/` | Laporan, termasuk catatan penggunaan AI, dan screenshot hasil |
-| `proposal-draf.md`, `proposal-draf.pdf` | Draf proposal proyek: pembuat daftar endpoint API FastAPI |
+| `laporan.md`, `laporan/screenshot/` | Laporan, termasuk catatan penggunaan AI, dan screenshot hasil |
+| `proposal-draf.md` | Draf proposal proyek: pembuat daftar endpoint API FastAPI |
 
 ## Persiapan
 
